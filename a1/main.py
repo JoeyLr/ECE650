@@ -277,6 +277,7 @@ class GraphPrinter:
         print("E = {")
         for item in self.final_edges:
             print("<{0},{1}>".format(item[0], item[1]))
+        print("}")
 
 
 if __name__ == '__main__':
@@ -293,13 +294,13 @@ if __name__ == '__main__':
 
         if parse_dict["cmd"] == "add":
             dataBase.add(parse_dict["name"], parse_dict["coordinates"])
-            print(dataBase.get())
+            # print(dataBase.get())
         elif parse_dict["cmd"] == "mod":
             dataBase.mod(parse_dict["name"], parse_dict["coordinates"])
-            print(dataBase.get())
+            # print(dataBase.get())
         elif parse_dict["cmd"] == "rm":
             dataBase.rm(parse_dict["name"])
-            print(dataBase.get())
+            # print(dataBase.get())
         elif parse_dict["cmd"] == "gg":
             graphGenerator = GraphGenerator(dataBase.get())
             edges, vertices = graphGenerator.gen_graph()
