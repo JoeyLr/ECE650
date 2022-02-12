@@ -1,0 +1,3 @@
+/Users/dengbowen/CLionProjects/a2/build/CMakeFiles/a2.dir
+/Users/dengbowen/CLionProjects/a2/build/CMakeFiles/edit_cache.dir
+/Users/dengbowen/CLionProjects/a2/build/CMakeFiles/rebuild_cache.dir
