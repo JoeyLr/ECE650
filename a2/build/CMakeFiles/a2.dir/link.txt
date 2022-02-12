@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/a2.dir/main.cpp.o -o a2 
+/usr/bin/c++     CMakeFiles/a2.dir/ece650-a2.cpp.o  -o a2 
