@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/a2.dir/ece650-a2.cpp.o -o a2 

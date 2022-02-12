@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/joeylr/b28deng/a2/ece650-a2.cpp
+iostream
+-
+vector
+-
+sstream
+-
+algorithm
+-
+regex
+-
+string
+-
+list
+-
+climits
+-
+
