@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/joeylr/b28deng/a3/rgen.cpp
+iostream
+-
+random
+-
+ctime
+-
+unistd.h
+-
+fcntl.h
+-
+

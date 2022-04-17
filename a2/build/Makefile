@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named a2
+# Target rules for targets named tests
 
 # Build rule for target.
-a2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 a2
-.PHONY : a2
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
 
 # fast build rule for target.
-a2/fast:
-	$(MAKE) -f CMakeFiles/a2.dir/build.make CMakeFiles/a2.dir/build
-.PHONY : a2/fast
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
+# Target rules for targets named ece650-a2
+
+# Build rule for target.
+ece650-a2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ece650-a2
+.PHONY : ece650-a2
+
+# fast build rule for target.
+ece650-a2/fast:
+	$(MAKE) -f CMakeFiles/ece650-a2.dir/build.make CMakeFiles/ece650-a2.dir/build
+.PHONY : ece650-a2/fast
 
 ece650-a2.o: ece650-a2.cpp.o
 
@@ -129,7 +142,7 @@ ece650-a2.o: ece650-a2.cpp.o
 
 # target to build an object file
 ece650-a2.cpp.o:
-	$(MAKE) -f CMakeFiles/a2.dir/build.make CMakeFiles/a2.dir/ece650-a2.cpp.o
+	$(MAKE) -f CMakeFiles/ece650-a2.dir/build.make CMakeFiles/ece650-a2.dir/ece650-a2.cpp.o
 .PHONY : ece650-a2.cpp.o
 
 ece650-a2.i: ece650-a2.cpp.i
@@ -138,7 +151,7 @@ ece650-a2.i: ece650-a2.cpp.i
 
 # target to preprocess a source file
 ece650-a2.cpp.i:
-	$(MAKE) -f CMakeFiles/a2.dir/build.make CMakeFiles/a2.dir/ece650-a2.cpp.i
+	$(MAKE) -f CMakeFiles/ece650-a2.dir/build.make CMakeFiles/ece650-a2.dir/ece650-a2.cpp.i
 .PHONY : ece650-a2.cpp.i
 
 ece650-a2.s: ece650-a2.cpp.s
@@ -147,8 +160,35 @@ ece650-a2.s: ece650-a2.cpp.s
 
 # target to generate assembly for a file
 ece650-a2.cpp.s:
-	$(MAKE) -f CMakeFiles/a2.dir/build.make CMakeFiles/a2.dir/ece650-a2.cpp.s
+	$(MAKE) -f CMakeFiles/ece650-a2.dir/build.make CMakeFiles/ece650-a2.dir/ece650-a2.cpp.s
 .PHONY : ece650-a2.cpp.s
+
+test.o: test.cpp.o
+
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -158,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... a2"
+	@echo "... tests"
+	@echo "... ece650-a2"
 	@echo "... ece650-a2.o"
 	@echo "... ece650-a2.i"
 	@echo "... ece650-a2.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 

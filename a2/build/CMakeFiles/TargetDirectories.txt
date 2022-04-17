@@ -1,3 +1,4 @@
 /home/joeylr/b28deng/a2/build/CMakeFiles/rebuild_cache.dir
 /home/joeylr/b28deng/a2/build/CMakeFiles/edit_cache.dir
-/home/joeylr/b28deng/a2/build/CMakeFiles/a2.dir
+/home/joeylr/b28deng/a2/build/CMakeFiles/tests.dir
+/home/joeylr/b28deng/a2/build/CMakeFiles/ece650-a2.dir

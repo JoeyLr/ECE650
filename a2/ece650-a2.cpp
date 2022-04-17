@@ -1,7 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <sstream>
-#include <algorithm>
 #include <regex>
 #include <string>
 #include <list>
@@ -14,6 +12,8 @@ class Graph {
     vector<int> *edges;
 
 public:
+    Graph() : edges(NULL) {}
+
     void refreshGraph(int v);
 
     void addEdge(int x, int y);
@@ -22,11 +22,14 @@ public:
 
     void printShortestDistance(int s, int dest);
 
+    void deleteEdge();
+
 };
 
 void Graph::refreshGraph(int v) {
+    deleteEdge();
     numVertices = v;
-    edges = new vector<int>[numVertices+1];
+    edges = new vector<int>[numVertices + 1];
 }
 
 void Graph::addEdge(int x, int y) {
@@ -52,7 +55,7 @@ bool Graph::bfs(int src, int dest, int v, int pred[], int dist[]) {
     while (!queue.empty()) {
         int u = queue.front();
         queue.pop_front();
-        for (int i = 0; i < edges[u].size(); i++) {
+        for (unsigned i = 0; i < edges[u].size(); i++) {
             if (!visited[edges[u][i]]) {
                 visited[edges[u][i]] = true;
                 dist[edges[u][i]] = dist[u] + 1;
@@ -93,14 +96,21 @@ void Graph::printShortestDistance(int s, int dest) {
 
 }
 
+void Graph::deleteEdge() {
+    if (edges != NULL) {
+        delete[] edges;
+        edges = NULL;
+    }
+}
+
 
 int size = 0;
 Graph g;
 
-string input_parser(string const &str, const char delim,
-                    vector<string> &out) {
+void input_parser(string const &str, const char delim,
+                  vector<string> &out) {
     string content;
-    string res;
+
 
     // create a stream from the string
     stringstream s(str);
@@ -151,7 +161,6 @@ string input_parser(string const &str, const char delim,
                         throw "Error: Invalid edge input";
                     }
                 } catch (const char *errMessage) {
-                    g.refreshGraph(0);
                     cerr << errMessage << endl;
                 }
                 ++iter;
@@ -168,10 +177,6 @@ string input_parser(string const &str, const char delim,
     } else {
         cerr << "Error: Invalid input" << endl;
     }
-
-
-    return res;
-
 }
 
 
@@ -184,10 +189,6 @@ int main() {
             if (cin.eof()) {
                 break;
             }
-
-//            if (s2 == ""){
-//                break;
-//            }
 
             const char delim = ' '; /* define the delimiter like space (' '), comma (,), hyphen (-), etc. */
 

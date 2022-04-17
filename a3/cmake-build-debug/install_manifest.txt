@@ -1,0 +1,4 @@
+/home/joeylr/b28deng/a3/cmake-build-debug/run/bin/ece650-a1.py
+/home/joeylr/b28deng/a3/cmake-build-debug/run/bin/ece650-a2
+/home/joeylr/b28deng/a3/cmake-build-debug/run/bin/ece650-a3
+/home/joeylr/b28deng/a3/cmake-build-debug/run/bin/rgen
