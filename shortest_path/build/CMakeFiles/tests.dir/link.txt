@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++11 -Wall    CMakeFiles/tests.dir/test.cpp.o  -o tests 
