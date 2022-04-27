@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.12)
-project(ece650-prj)
+project(vertex_cover)
 
 if (EXISTS "${CMAKE_SOURCE_DIR}/minisat")
   add_subdirectory(minisat)
@@ -24,10 +24,10 @@ endif()
 
 # create the main executable
 ## add additional .cpp files if needed
-add_executable(ece650-prj ece650-prj.cpp)
+add_executable(vertex_cover vertex_cover.cpp)
 # link MiniSAT libraries
-target_link_libraries(ece650-prj minisat-lib-static)
-target_link_libraries (ece650-prj ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(vertex_cover minisat-lib-static)
+target_link_libraries (vertex_cover ${CMAKE_THREAD_LIBS_INIT})
 
 # create the executable for tests
 add_executable(test test.cpp)
