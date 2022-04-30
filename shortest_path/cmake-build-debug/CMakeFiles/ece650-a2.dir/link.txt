@@ -1,1 +1,0 @@
-/usr/bin/c++ -std=c++11 -Wall  -g CMakeFiles/ece650-a2.dir/shortest_path.cpp.o -o ece650-a2 

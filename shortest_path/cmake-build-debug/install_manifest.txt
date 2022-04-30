@@ -1,4 +1,0 @@
-/home/joeylr/ECE650/a3/cmake-build-debug/run/bin/graph_generator.py
-/home/joeylr/ECE650/a3/cmake-build-debug/run/bin/ece650-a2
-/home/joeylr/ECE650/a3/cmake-build-debug/run/bin/ece650-a3
-/home/joeylr/ECE650/a3/cmake-build-debug/run/bin/rgen
