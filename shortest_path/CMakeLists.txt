@@ -15,11 +15,10 @@ endif()
 
 # create the main executable
 ## add additional .cpp files if needed
-add_executable(shortest_path-a2 shortest_path.cpp)
-add_executable(main-a3 main.cpp)
+add_executable(shortest_path shortest_path.cpp)
+add_executable(main main.cpp)
 add_executable(rgen rgen.cpp)
 
 # create the executable for tests
-add_executable(tests test.cpp)
 install(PROGRAMS graph_generator.py DESTINATION bin)
-install(TARGETS ece650-a2 ece650-a3 rgen RUNTIME DESTINATION bin)
+install(TARGETS shortest_path main rgen RUNTIME DESTINATION bin)

@@ -29,7 +29,5 @@ add_executable(vertex_cover vertex_cover.cpp)
 target_link_libraries(vertex_cover minisat-lib-static)
 target_link_libraries (vertex_cover ${CMAKE_THREAD_LIBS_INIT})
 
-# create the executable for tests
-add_executable(test test.cpp)
 # link MiniSAT libraries
 target_link_libraries(test minisat-lib-static)
