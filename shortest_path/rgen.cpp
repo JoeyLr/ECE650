@@ -7,7 +7,7 @@
 using namespace std;
 
 
-int randnGen(int max, int min) { // refer to "Advanced linux programming" - Listing 6.1
+int randnGen(int max, int min) {
     unsigned int random;
 
     int fd = -1;
@@ -208,15 +208,6 @@ int main(int argc, char *argv[]) {
     vector<string> street_list;
     int numAttempt = 0;
 
-//    bool isoverlap = checkOverlap(2, 0, 2, 2, 2, 1, 2, 4);
-//    cout << isoverlap << endl;
-
-
-//        bool whetherOverlap = isOverlap(all_street_list, lineList, 0, 0, 3, 3);
-//        cout << whetherOverlap <<endl;
-
-
-
     while (true) {
         numStreet = randnGen(street_k, 2);
 //            cout << "street number: " << numStreet << endl;
@@ -273,7 +264,6 @@ int main(int argc, char *argv[]) {
             }
         }
         cout << "gg" << endl;
-//            cout << "-----------------------------" << endl;
         street_num = 0;
         numWait = randnGen(wait_k, 5);
         sleep(numWait);
@@ -283,12 +273,6 @@ int main(int argc, char *argv[]) {
         }
         street_list.clear();
     }
-
-
-//    cout << num_street << endl;
-//    cout << num_line << endl;
-//    cout << num_wait << endl;
-//    cout << num_range << endl;
 
     return 0;
 }

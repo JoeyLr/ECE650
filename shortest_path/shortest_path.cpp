@@ -111,13 +111,11 @@ void input_parser(string const &str, const char delim,
                   vector<string> &out) {
     string content;
 
-
-    // create a stream from the string
     stringstream s(str);
 
     string s2;
     while (getline(s, s2, delim)) {
-        out.push_back(s2); // store the string in s2
+        out.push_back(s2);
 //        cout << str << endl;
     }
 
@@ -191,18 +189,13 @@ int main() {
             getline(cin, s2);
 
             if (cin.eof()) {
-//                g.deleteEdge();
                 break;
             }
 
-//            if (s2 == ""){
-//                break;
-//            }
+            const char delim = ' ';
 
-            const char delim = ' '; /* define the delimiter like space (' '), comma (,), hyphen (-), etc. */
-
-            vector<string> out; // store the string in vector
-            input_parser(s2, delim, out); // call function to split the string
+            vector<string> out;
+            input_parser(s2, delim, out);
         }
     }
     catch (const char *errMessage) {
