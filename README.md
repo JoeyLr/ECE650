@@ -34,11 +34,10 @@ s 1 10
 
 ## Vertex Cover
 
-CNF-SAT-VC method solves the satisfiability problem with the open-source tool minisat ()
+CNF-SAT-VC method solves the satisfiability problem with the open-source tool minisat (http://minisat.se/)
 before reproduce the code, clone the github project of minisat with 
 ```
 git clone https://github.com/niklasso/minisat
-
 ```
 
 To run the code, using folowwing command
